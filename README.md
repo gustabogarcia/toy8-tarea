@@ -19,18 +19,31 @@ Tienen un emulador de la computadora y el circuito para el Logisim en el [blog](
 
 
 0x1:  10101011    #  AB  #  lw B
+
 0x2:  11101010    #  EA  #  bze A
+
 0x3:  00101101    #  2D  #  add D
+
 0x4:  11001011    #  CB  #  sw B
+
 0x5:  10101110    #  AE  #  add E
+
 0x6:  00101100    #  2C  #  add C
+
 0x7:  11001110    #  CE  #  sw E
+
 0x8:  10100000    #  A0  #  add 0
+
 0x9:  11100001    #  E1  #  bze 1
+
 0xA:  00000000    #  00  #  halt
+
 0xB:  00000011    #  03  #  3
+
 0xC:  00000110    #  06  #  6
+
 0xD:  11111111    #  FF  #  FF
+
 0xE:  00000000    #  00  #  0
 
 
@@ -38,8 +51,11 @@ Tienen un emulador de la computadora y el circuito para el Logisim en el [blog](
 
 
 0x0   00 A5 26 C7
+
 0x4   00 08 05 00
+
 0x8   A7 6D 2E C7
+
 0xc   00 FF 01 00
 
 En  la memoria hay dos programas. Las instrucciones del primero son de los bytes de las direcciones 0x1, 0x2, 0x3 y 0x4 y los datos a 0x5, 0x6 y 0x7. Las instrucciones del segundo programa corresponden a las direcciones 0x8, 0x9, 0xA, 0xB y 0xC, y los datos a 0x7, 0xD y 0xE.
@@ -61,15 +77,25 @@ En  la memoria hay dos programas. Las instrucciones del primero son de los bytes
 
 
 0x1:  A0  # lw 0  #  int R = 0;
+
 0x2:  CE  # sw E  #  int sum = 0;
+
 0x3:  AF  # lw F  #  int R = 0;
+
 0x4:  E9  # bze 9 #  if (R = 0) { int R = 0; }
+
 0x5:  2E  # add E #  R = R + 0;  
+
 0x6:  CE  # sw E  #  int sum = 0;
+
 0x7:  A0  # lw 0  #  int R = 0;
+
 0x8:  E3  # bze 3 #  if (R = 0) { int R = 0; }
+
 0x9:  AE  # lw E  #  int R = 0;
+
 0xA:  CF  # sw F  #  int sum = 0;
+
 0xB:  00  # halt  #  break;
 
 
