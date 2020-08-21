@@ -101,3 +101,5 @@ En  la memoria hay dos programas. Las instrucciones del primero son de los bytes
 
 
 5. Una mejora que le podríamos hacer a esta computadora es duplicar la cantidad de memoria, pasar de 16 bytes a 32 bytes. ¿Cómo lo harían manteniendo la longitud de las instrucciones en 8 bits? ¿Qué partes de la CPU habría que modificar y cómo?
+
+Se podría agregar una memoria RAM de 16 bytes para así duplicar su capacidad. Luego, mediante un demultiplexor, seleccionar la memoria que se quiere que la PC elija cuando se ponga 1, a continuación un mux que conecte las salidas de ambas memorias y, finalmente, otro demultiplexor, cuya función sería la de seleccionar en que RAM se escribe. Todo conectado a un addr mux de la unidad de control.
